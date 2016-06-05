@@ -1,8 +1,12 @@
 # Predict defaults of personal loans for Lending Club
-In this project, we aimed at predicting defaults of personal loans for Lending Club to help it increase its accuracy in detecting bad loans and 
+In this project, we experimented with various machine learning algorithms to predict defaults of personal loans on Lending Club, in the hope that it would not only help Lending Club achieve a higher accuracy in classifying its loans, but also increase the return of investments for its investors and decrease the cost of lending over time. 
 
-data can be found ...
+Data can be found on Lending Club's website: https://www.lendingclub.com/info/download-data.action. It includes data on its borrowers from 2007 to 2016. 
 
-to run ...
+Run the program in the following order:
 
-also includes a project proposal, a presentation and a final report 
+1. preprocess.py
+2. process_desc.py
+3. main.py
+
+You can also find a proposal, a presentation and a final report for this project. 
