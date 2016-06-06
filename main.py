@@ -34,7 +34,6 @@ def read_file():
       feature_vectors[i].append(float(l[0]))
       '''feature_vectors[i].append(float(l[1]))'''
 
-
     fn_file = open('processed_feature.txt', 'r').readline().split('^')
     for l in fn_file:
         feature_names.append(l)
@@ -95,9 +94,7 @@ def feature_explore(weight):
     explore_file.close()
     print('Explore Weight Done')
 
-
 def measure(y_true, y_predict):
-
   TP = 0.0
   FP = 0.0
   TN = 0.0
@@ -182,11 +179,11 @@ clf.fit(info[0], info[1])
 #classes = ["Default", "Fully Paid"]
 #file = open("processed_feature.txt", "r")
 #for line in file:
-#  features = line.split("^")
+#features = line.split("^")
 #features.append("loan description")
 
 #with open("tree.dot", 'w') as f:
-#    f = tree.export_graphviz(clf, out_file = f, max_depth = 3, feature_names = features, class_names = classes, filled = True, rounded = True)
+#f = tree.export_graphviz(clf, out_file = f, max_depth = 3, feature_names = features, class_names = classes, filled = True, rounded = True)
 
 y_predict = clf.predict(info[2])
 accuracy, sensitivity, specificity, PPV = measure (info[3], y_predict)
